@@ -37,5 +37,7 @@ module SimpleTwitterApi
                        helper_specs: false,
                        routing_specs: false
     end
+    # Exception handling
+    config.exceptions_app = self.routes
   end
 end
