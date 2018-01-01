@@ -26,6 +26,8 @@ group :development, :test do
   # rspec testing
   gem 'rspec-rails', '3.7.2'
   gem 'shoulda-matchers', '3.1.2', require: false
+  # for data factories
+  gem 'factory_bot_rails', '4.8.2'
 end
 
 group :development do
