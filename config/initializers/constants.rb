@@ -1,1 +1,3 @@
 # App wide constants
+PASSWORD_LENGTH_MIN = 8
+PASSWORD_LENGTH_MAX = 72
