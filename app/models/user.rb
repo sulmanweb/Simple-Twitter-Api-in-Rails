@@ -10,4 +10,6 @@ class User < ApplicationRecord
   validates :password, presence: true, on: :create
   validates :password, length: {in: PASSWORD_LENGTH_MIN..PASSWORD_LENGTH_MAX}, format: {with: /\A(?=.*[0-9])(?=.*[!@#\$%\^&\*])/}, if: :password
 
+  ## RELATIONSHIPS
+  has_many :sessions, dependent: :destroy
 end
