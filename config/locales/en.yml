@@ -3,3 +3,7 @@ en:
   error:
     not_found: "Sorry the page you requested could not be found"
     internal_server_error: "There was an internal server error. Admin is notified and the problem will be resolved soon"
+    unauthorized: "You must be signed in to perform this action"
+    auth:
+      invalid_auth: "You have entered wrong login credentials"
+      password_invalid: "You have entered wrong login credentials"

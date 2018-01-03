@@ -66,3 +66,9 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+# Sign in functionality for test
+def sign_in_test session
+  request.headers['sid'] = session.id
+  request.headers['utoken'] = session.utoken
+end
