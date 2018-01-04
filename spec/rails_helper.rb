@@ -72,3 +72,11 @@ def sign_in_test session
   request.headers['sid'] = session.id
   request.headers['utoken'] = session.utoken
 end
+
+def sign_in_test_headers session
+  headers = {}
+  headers["ACCEPT"] = 'application/json'
+  headers["sid"] = session.id
+  headers["utoken"] = session.utoken
+  return headers
+end
